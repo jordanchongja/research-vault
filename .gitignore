@@ -26,6 +26,27 @@ share/python-wheels/
 *.egg
 MANIFEST
 
+# --- QUANT PROJECT SPECIFIC (Add these!) ---
+
+# 1. Ignore Data (Too big for GitHub & proprietary)
+data/
+*.csv
+*.xlsx
+*.parquet
+*.pkl
+*.h5
+
+# 2. Ignore Credentials (NEVER upload these)
+credentials.py
+secrets.json
+.env
+config_private.py
+
+# 3. Ignore IDE settings (Personal preferences)
+.vscode/
+.idea/
+.DS_Store
+
 # PyInstaller
 #  Usually these files are written by a python script from a template
 #  before PyInstaller builds the exe, so as to inject date/other infos into it.
