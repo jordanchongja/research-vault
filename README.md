@@ -7,7 +7,7 @@
 ![](https://img.shields.io/badge/Python-3.10-3776AB?logo=python&logoColor=white)
 ![](https://img.shields.io/badge/Visualization-Plotly-3F4F75?logo=plotly&logoColor=white)
 ![](https://img.shields.io/badge/Modeling-hmmlearn-150458?logo=scikitlearn&logoColor=white)
-[![GitHub](https://img.shields.io/badge/View_Source_Code-181717?logo=github&logoColor=white)](https://github.com/jordanchongja/Iran-war-Geopolitical-Shock-Analysis)
+[![Read Case Study](https://img.shields.io/badge/Research-Full_Case_Study_📚-blue?style=flat&logo=read-the-docs&logoColor=white)](https://jordanchongja.github.io/notes/posts/indonesia-regulatory-equity-ownership-analysis/)
 
 ## Part 0: Rationale
 This project originated from a technical assessment where I was tasked with extracting and analyzing equity ownership data from Indonesian Financial Services Authority (OJK) filings. The core challenge involved parsing complex PDF tables and identifying the impact of the 2026 regulatory shift that lowered the public reporting threshold from 5% to 1%.
