@@ -35,20 +35,20 @@ Crucially, it is designed to mitigate the statistical problem of cross-sectional
 
 *   **Step 1 (Time-Series Regression):** First, we regress individual asset or portfolio returns against our proposed factors to estimate the factor loadings ($\hat{\beta}$) for each asset. For $K$ factors:
     
-    $$
-    R_{i,t} - R_{f,t} = \alpha_i + \sum_{j=1}^K \beta_{i,j} F_{j,t} + \epsilon_{i,t}
-    $$
+$$
+R_{i,t} - R_{f,t} = \alpha_i + \sum_{j=1}^K \beta_{i,j} F_{j,t} + \epsilon_{i,t}
+$$
 
 *   **Step 2 (Cross-Sectional Regression):** Next, for *every single time period* (e.g., every month $t$), we run a cross-sectional regression of all asset returns against their previously estimated $\hat{\beta}$s from Step 1. This generates a time series of risk premia coefficients ($\hat{\gamma}$) for each factor:
     
-    $$
-    R_{i,t} - R_{f,t} = \gamma_{0,t} + \sum_{j=1}^K \gamma_{j,t} \hat{\beta}_{i,j} + \eta_{i,t}
-    $$
+$$
+R_{i,t} - R_{f,t} = \gamma_{0,t} + \sum_{j=1}^K \gamma_{j,t} \hat{\beta}_{i,j} + \eta_{i,t}
+$$
 
 *   **The Purpose (Averaging):** Finally, we take the time-series average of these cross-sectional coefficients to find the true risk premium ($\lambda$):
     
-    $$
-    \hat{\lambda}_j = \frac{1}{T} \sum_{t=1}^T \hat{\gamma}_{j,t}
-    $$
+$$
+\hat{\lambda}_j = \frac{1}{T} \sum_{t=1}^T \hat{\gamma}_{j,t}
+$$
 
 **In summary:** While a naive PCA might grab any combination of factors that happened to look profitable in the past, a quantitative strategist uses the **Fama-MacBeth methodology** to robustly test whether the theoretical risk factors proposed by models like **Fama-French** are actually, consistently priced into the market over time. It is the definitive test to separate true alpha from statistical noise.
