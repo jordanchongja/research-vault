@@ -10,7 +10,9 @@ Most retail trading algorithms quote symmetrically around the mid-price. But pro
 
 I built this simulation to explore the foundational market-making model proposed by Avellaneda & Stoikov (2006). Instead of just reading the paper, I wanted to build the engine from scratch to visually pit this stochastic control strategy against naive market making, seeing exactly when and how the naive strategy blows up.
 
-> **My thoughts on the implementation:** [Insert your personal narrative/thoughts here...]
+> **My thoughts on the implementation:**
+So the implementation requied a good understanding of the paper and the paper required me to look into other topics like CARA, why it was used, and how it was used in the ansatz to simpify the equation since it could be assumed that no utility would be gained from holding cash since the marker-maker makes utility decisions that are wealth-independent. And so seeing the logical flow from building the utility function fo the market-maker, how the market-maker would buy up to the point where they are indifferent between an additional unit of the stock and their cash, then solving for that point of the equation was an interesting learning experience. Learning more about toxic order flow was also interesting and although not covered in this paper, i could see the impact that toxic order flow could have in a market-makers profits, so beyond just learning how the bid and ask prices are set, I will continue to look at how external factors in the market like toxic order flow could impact profits. 
+
 
 ## 🧮 Under the Hood
 To model the market maker's behavior, the engine handles a few key implementations:
