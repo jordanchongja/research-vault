@@ -1,0 +1,4 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Github Code/research-vault/linear-algebra/haar-wavelets-and-image-compression/media/videos/haar-wavelets-and-image-compression/720p30/partial_movie_files/HaarTransformVisualization/1987512680_2688965532_3750166283.mp4'
+file 'file:C:/Github Code/research-vault/linear-algebra/haar-wavelets-and-image-compression/media/videos/haar-wavelets-and-image-compression/720p30/partial_movie_files/HaarTransformVisualization/2538612922_71558940_3771431348.mp4'
+file 'file:C:/Github Code/research-vault/linear-algebra/haar-wavelets-and-image-compression/media/videos/haar-wavelets-and-image-compression/720p30/partial_movie_files/HaarTransformVisualization/2538612922_4247107814_1524522144.mp4'
